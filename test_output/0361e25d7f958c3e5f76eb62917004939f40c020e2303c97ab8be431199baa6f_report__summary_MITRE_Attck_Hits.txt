@@ -1,0 +1,158 @@
+-- MITRE Att&ck Hits, top techniques
+
+
+     **Header: Reconnaissance
+
+
+     **Header: Resource Development
+
+
+     **Header: Initial Access
+
+
+     **Header: Execution
+
+
+     **Header: Persistence
+
+
+     **Header: Privilege Escalation
+            T1055
+            Process Injection
+            rank:   7
+
+            T1055.012
+            Process Injection: Process Hollowing
+            rank:   7
+
+            T1134
+            Access Token Manipulation
+            rank:   76
+
+            T1134.001
+            Access Token Manipulation: Token Impersonation/Theft
+            rank:   76
+
+
+
+     **Header: Defense Evasion
+            T1055
+            Process Injection
+            rank:   7
+
+            T1055.012
+            Process Injection: Process Hollowing
+            rank:   7
+
+            T1027
+            Obfuscated Files or Information
+            rank:   14
+
+            T1027.002
+            Obfuscated Files or Information: Software Packing
+            rank:   14
+
+            T1140
+            Deobfuscate/Decode Files or Information
+            rank:   61
+
+            T1134
+            Access Token Manipulation
+            rank:   76
+
+            T1134.001
+            Access Token Manipulation: Token Impersonation/Theft
+            rank:   76
+
+
+
+     **Header: Credential Access
+
+
+     **Header: Discovery
+            T1082
+            System Information Discovery
+            rank:   50
+
+            T1057
+            Process Discovery
+            rank:   122
+
+            T1135
+            Network Share Discovery
+            rank:   125
+
+            T1049
+            System Network Connections Discovery
+            rank:   132
+
+
+
+     **Header: Lateral Movement
+
+
+     **Header: Collection
+
+
+     **Header: Command and Control
+            T1571
+            Non-Standard Port
+            rank:   57
+
+
+
+     **Header: Exfiltration
+
+
+     **Header: Impact
+
+
+
+
+
+
+-- MITRE Att&ck Hits, remaining tecniques not top priority IDs
+
+
+     **Header: Reconnaissance
+
+
+     **Header: Resource Development
+
+
+     **Header: Initial Access
+
+
+     **Header: Execution
+
+
+     **Header: Persistence
+
+
+     **Header: Privilege Escalation
+
+
+     **Header: Defense Evasion
+
+
+     **Header: Credential Access
+
+
+     **Header: Discovery
+
+
+     **Header: Lateral Movement
+
+
+     **Header: Collection
+
+
+     **Header: Command and Control
+
+
+     **Header: Exfiltration
+
+
+     **Header: Impact
+
+

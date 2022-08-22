@@ -1,0 +1,38 @@
+Tactic, Techniques Used
+Reconnaissance
+Resource Development
+Initial Access
+Execution, T1059, T1059.003, T1106
+Persistence
+Privilege Escalation, T1055, T1055.012, T1055.013, T1134, T1134.001, T1548
+Defense Evasion, T1027, T1027.002, T1055, T1055.012, T1055.013, T1112, T1134, T1134.001, T1548
+Credential Access, T1056, T1056.001, T1056.004
+Discovery, T1012, T1057, T1082, T1083
+Lateral Movement
+Collection, T1005, T1056, T1056.001, T1056.004, T1113
+Command and Control
+Exfiltration
+Impact
+
+Technique,
+T1005,-- Summary:Found browser information locations related strings
+T1012,-- Summary:Found registry key string for installed applications,-- Summary:Reads information about supported languages,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\CUSTOMLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\EXTENDEDLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\LOCALE
+T1027
+T1027.002,-- Summary:Matched Compiler/Packer signature
+T1055,-- Process Image:cmd.exe,-- Summary:Writes data to a remote process
+T1055.012,-- Summary:Observed SetWindowsHookEx API string,-- Summary:Observed WriteProcessMemory API string
+T1055.013,-- Summary:Observed NtUnmapViewOfSection API string
+T1056
+T1056.001,-- Summary:Observed GetAsyncKeyState/GetKeyState API string
+T1056.004,-- Process Image:cmd.exe,-- Process Image:reg.exe,-- Process Image:winslogon.exe,-- Summary:Installs hooks/patches the running process
+T1057,-- Summary:Observed Process32First/Process32Next/CreateToolhelp32Snapshot API string
+T1059
+T1059.003,-- Summary:Runs shell commands
+T1082,-- Summary:Contains ability to read software policies,-- Summary:Observed GetNativeSystemInfo API string,Reg:HKLM\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SAFER\CODEIDENTIFIERS
+T1083,-- Summary:Observed GetLogicalDriveStrings API string
+T1106,-- Summary:Contains ability to dynamically determine API calls,-- Summary:Imports GetCommandLine API
+T1112,-- Summary:Modifies the UAC/LUA settings (Account Control),-- Summary:Uses REG.EXE to add/load/import registry data,Reg:HKLM\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\SYSTEM
+T1113,-- Summary:Observed CreateCompatibleBitmap API string
+T1134,-- Summary:Observed AdjustTokenPrivileges API string
+T1134.001,-- Summary:Imports system security related APIs,-- Summary:Observed system security related strings
+T1548,-- Summary:Observed strings related to Windows privileges

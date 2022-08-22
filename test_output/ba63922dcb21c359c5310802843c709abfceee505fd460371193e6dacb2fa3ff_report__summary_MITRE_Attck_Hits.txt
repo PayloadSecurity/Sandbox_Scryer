@@ -1,0 +1,234 @@
+-- MITRE Att&ck Hits, top techniques
+
+
+     **Header: Reconnaissance
+
+
+     **Header: Resource Development
+
+
+     **Header: Initial Access
+
+
+     **Header: Execution
+            T1047
+            Windows Management Instrumentation
+            rank:   2
+
+
+
+     **Header: Persistence
+            T1574
+            Hijack Execution Flow
+            rank:   4
+
+            T1574.010
+            Hijack Execution Flow: Services File Permissions Weakness
+            rank:   4
+
+
+
+     **Header: Privilege Escalation
+            T1574
+            Hijack Execution Flow
+            rank:   4
+
+            T1574.010
+            Hijack Execution Flow: Services File Permissions Weakness
+            rank:   4
+
+            T1055
+            Process Injection
+            rank:   7
+
+            T1055.012
+            Process Injection: Process Hollowing
+            rank:   7
+
+            T1548
+            Abuse Elevation Control Mechanism
+            rank:   12
+
+            T1134
+            Access Token Manipulation
+            rank:   76
+
+            T1134.001
+            Access Token Manipulation: Token Impersonation/Theft
+            rank:   76
+
+
+
+     **Header: Defense Evasion
+            T1574
+            Hijack Execution Flow
+            rank:   4
+
+            T1574.010
+            Hijack Execution Flow: Services File Permissions Weakness
+            rank:   4
+
+            T1055
+            Process Injection
+            rank:   7
+
+            T1055.012
+            Process Injection: Process Hollowing
+            rank:   7
+
+            T1548
+            Abuse Elevation Control Mechanism
+            rank:   12
+
+            T1027
+            Obfuscated Files or Information
+            rank:   14
+
+            T1027.002
+            Obfuscated Files or Information: Software Packing
+            rank:   14
+
+            T1497
+            Virtualization/Sandbox Evasion
+            rank:   62
+
+            T1134
+            Access Token Manipulation
+            rank:   76
+
+            T1134.001
+            Access Token Manipulation: Token Impersonation/Theft
+            rank:   76
+
+
+
+     **Header: Credential Access
+            T1056
+            Input Capture
+            rank:   51
+
+            T1056.004
+            Input Capture: Credential API Hooking
+            rank:   51
+
+
+
+     **Header: Discovery
+            T1012
+            Query Registry
+            rank:   45
+
+            T1082
+            System Information Discovery
+            rank:   50
+
+            T1497
+            Virtualization/Sandbox Evasion
+            rank:   62
+
+            T1083
+            File and Directory Discovery
+            rank:   98
+
+            T1057
+            Process Discovery
+            rank:   122
+
+            T1518
+            Software Discovery
+            rank:   135
+
+            T1518.001
+            Software Discovery: Security Software Discovery
+            rank:   135
+
+            T1120
+            Peripheral Device Discovery
+            rank:   154
+
+
+
+     **Header: Lateral Movement
+            T1021
+            Remote Services
+            rank:   9
+
+            T1021.001
+            Remote Services: Remote Desktop Protocol
+            rank:   9
+
+
+
+     **Header: Collection
+            T1056
+            Input Capture
+            rank:   51
+
+            T1056.004
+            Input Capture: Credential API Hooking
+            rank:   51
+
+            T1005
+            Data from Local System
+            rank:   82
+
+
+
+     **Header: Command and Control
+
+
+     **Header: Exfiltration
+
+
+     **Header: Impact
+
+
+
+
+
+
+-- MITRE Att&ck Hits, remaining tecniques not top priority IDs
+
+
+     **Header: Reconnaissance
+
+
+     **Header: Resource Development
+
+
+     **Header: Initial Access
+
+
+     **Header: Execution
+
+
+     **Header: Persistence
+
+
+     **Header: Privilege Escalation
+
+
+     **Header: Defense Evasion
+
+
+     **Header: Credential Access
+
+
+     **Header: Discovery
+
+
+     **Header: Lateral Movement
+
+
+     **Header: Collection
+
+
+     **Header: Command and Control
+
+
+     **Header: Exfiltration
+
+
+     **Header: Impact
+
+

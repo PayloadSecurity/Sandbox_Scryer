@@ -1,0 +1,29 @@
+Tactic, Techniques Used
+Reconnaissance
+Resource Development
+Initial Access
+Execution
+Persistence
+Privilege Escalation, T1055, T1055.012, T1134, T1134.001
+Defense Evasion, T1027, T1027.002, T1055, T1055.012, T1134, T1134.001, T1140
+Credential Access
+Discovery, T1049, T1057, T1082, T1135
+Lateral Movement
+Collection
+Command and Control, T1571
+Exfiltration
+Impact
+
+Technique,
+T1027
+T1027.002,-- Summary:Matched Compiler/Packer signature
+T1049,-- Summary:Contains ability to enumerate the network resources
+T1055
+T1055.012,-- Summary:Observed WriteProcessMemory API string
+T1057,-- Summary:Observed Process32First/Process32Next/CreateToolhelp32Snapshot API string
+T1082,-- Summary:Contains ability to read software policies,Reg:HKLM\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SAFER\CODEIDENTIFIERS
+T1134
+T1134.001,-- Summary:Observed system security related strings
+T1135,-- Summary:Contains capability to discover network shares,-- Summary:Observed network API strings
+T1140,-- Summary:Observed base64 conversion related strings
+T1571,-- Summary:Contains ability to open a port and listen for incoming connection

@@ -1,0 +1,1031 @@
+{
+    "name": "collated_080122",
+    "version": "3.0",
+    "domain": "mitre-enterprise",
+    "description": "Collated Sandbox report data",
+    "filters": {
+        "stages": [
+            "act"
+        ],
+        "platforms": [
+            "Windows",
+            "Linux",
+            "macOS"
+        ]
+    },
+    "sorting": 3,
+    "layout": {
+        "layout": "side",
+        "showID": true,
+        "showName": true
+    },
+    "hideDisabled": false,
+    "techniques": [
+        {
+            "techniqueID": "T1047",
+            "tactic": "execution",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains references to WMI/WMIC"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Found a reference to a WMI query string known to be used for VM detection"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059",
+            "tactic": "execution",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1059.003",
+            "tactic": "execution",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Runs shell commands"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1106",
+            "tactic": "execution",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains ability to dynamically determine API calls"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Imports GetCommandLine API"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1547",
+            "tactic": "persistence",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1547.001",
+            "tactic": "persistence",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Modifies auto-execute functionality by setting/creating a value in the registry"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKCU\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574",
+            "tactic": "persistence",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574.010",
+            "tactic": "persistence",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "References security related windows services"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055",
+            "tactic": "privilege-escalation",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Process Image",
+                    "value": "<Input Sample>.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "cmd.exe"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed CreateRemoteThread API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Writes data to a remote process"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055.012",
+            "tactic": "privilege-escalation",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Allocates virtual memory in a remote process"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed SetWindowsHookEx API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed WriteProcessMemory API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055.013",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed NtUnmapViewOfSection API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1134",
+            "tactic": "privilege-escalation",
+            "score": 62,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed AdjustTokenPrivileges API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1134.001",
+            "tactic": "privilege-escalation",
+            "score": 62,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Imports system security related APIs"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed system security related strings"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1547",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1547.001",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Modifies auto-execute functionality by setting/creating a value in the registry"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKCU\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1548",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed strings related to Windows privileges"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574.010",
+            "tactic": "privilege-escalation",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "References security related windows services"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1027",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1027.002",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Matched Compiler/Packer signature"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "PE file is packed with UPX"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055",
+            "tactic": "defense-evasion",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Process Image",
+                    "value": "<Input Sample>.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "cmd.exe"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed CreateRemoteThread API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Writes data to a remote process"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055.012",
+            "tactic": "defense-evasion",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Allocates virtual memory in a remote process"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed SetWindowsHookEx API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed WriteProcessMemory API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1055.013",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed NtUnmapViewOfSection API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1070",
+            "tactic": "defense-evasion",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1070.004",
+            "tactic": "defense-evasion",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Marks file for deletion"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Opens file with deletion access rights"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1112",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Creates or modifies windows services"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Modifies the UAC/LUA settings (Account Control)"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Uses REG.EXE to add/load/import registry data"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\POLICIES\\SYSTEM"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\SERVICES\\TCPIP\\PARAMETERS"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1134",
+            "tactic": "defense-evasion",
+            "score": 62,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed AdjustTokenPrivileges API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1134.001",
+            "tactic": "defense-evasion",
+            "score": 62,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Imports system security related APIs"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed system security related strings"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1140",
+            "tactic": "defense-evasion",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed base64 conversion related strings"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1497",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly tries to implement anti-virtualization techniques"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1497.003",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly tries to evade analysis by sleeping many times"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Tries to sleep for a long time (more than two minutes)"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1548",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed strings related to Windows privileges"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1574.010",
+            "tactic": "defense-evasion",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "References security related windows services"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056",
+            "tactic": "credential-access",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.001",
+            "tactic": "credential-access",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed GetAsyncKeyState/GetKeyState API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.004",
+            "tactic": "credential-access",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Process Image",
+                    "value": "<Input Sample>.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "cmd.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "reg.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "winslogon.exe"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Installs hooks/patches the running process"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1010",
+            "tactic": "discovery",
+            "score": 100,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Scanning for window names"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1012",
+            "tactic": "discovery",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Found registry key string for installed applications"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Reads information about supported languages"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Reads the active computer name"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\COMPUTERNAME\\ACTIVECOMPUTERNAME"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\NLS\\CUSTOMLOCALE"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\NLS\\EXTENDEDLOCALE"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\NLS\\LOCALE"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1049",
+            "tactic": "discovery",
+            "score": 67,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains ability to enumerate the network resources"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1057",
+            "tactic": "discovery",
+            "score": 64,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed Process32First/Process32Next/CreateToolhelp32Snapshot API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Queries process information"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1082",
+            "tactic": "discovery",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains ability to read software policies"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed GetEnvironmentVariable API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed GetNativeSystemInfo API string"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed RtlGetVersion/RtlGetNtProductType API string"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SOFTWARE\\POLICIES\\MICROSOFT\\WINDOWS\\SAFER\\CODEIDENTIFIERS"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1083",
+            "tactic": "discovery",
+            "score": 66,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed GetLogicalDriveStrings API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1120",
+            "tactic": "discovery",
+            "score": 99,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Queries volume information"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Queries volume information of an entire harddrive"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1135",
+            "tactic": "discovery",
+            "score": 67,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains capability to discover network shares"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Observed network API strings"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1497",
+            "tactic": "discovery",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly tries to implement anti-virtualization techniques"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1497.003",
+            "tactic": "discovery",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly tries to evade analysis by sleeping many times"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Tries to sleep for a long time (more than two minutes)"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1518",
+            "tactic": "discovery",
+            "score": 67,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1518.001",
+            "tactic": "discovery",
+            "score": 67,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly checks for the presence of a forensics/monitoring tool"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Possibly checks for the presence of an Antivirus engine"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1021",
+            "tactic": "lateral-movement",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1021.001",
+            "tactic": "lateral-movement",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Reads terminal service related keys (often RDP related)"
+                },
+                {
+                    "name": "Reg",
+                    "value": "HKLM\\SYSTEM\\CONTROLSET001\\CONTROL\\TERMINAL SERVER"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1005",
+            "tactic": "collection",
+            "score": 66,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Found browser information locations related strings"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056",
+            "tactic": "collection",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.001",
+            "tactic": "collection",
+            "score": 32,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed GetAsyncKeyState/GetKeyState API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1056.004",
+            "tactic": "collection",
+            "score": 31,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Process Image",
+                    "value": "<Input Sample>.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "cmd.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "reg.exe"
+                },
+                {
+                    "name": "-- Process Image",
+                    "value": "winslogon.exe"
+                },
+                {
+                    "name": "-- Summary",
+                    "value": "Installs hooks/patches the running process"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1113",
+            "tactic": "collection",
+            "score": 67,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Observed CreateCompatibleBitmap API string"
+                }
+            ],
+            "showSubtechniques": true
+        },
+        {
+            "techniqueID": "T1571",
+            "tactic": "command-and-control",
+            "score": 33,
+            "color": "",
+            "comment": "",
+            "enabled": true,
+            "metadata": [
+                {
+                    "name": "-- Summary",
+                    "value": "Contains ability to open a port and listen for incoming connection"
+                }
+            ],
+            "showSubtechniques": true
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#ff6666",
+            "#ffe766",
+            "#8ec843"
+        ],
+        "minValue": 0,
+        "maxValue": 100
+    },
+    "legendItems": [],
+    "metadata": [],
+    "showTacticRowBackground": false,
+    "tacticRowBackground": "#dddddd", 
+    "selectTechniquesAcrossTactics": true,
+    "selectSubtechniquesWithParent": true
+}

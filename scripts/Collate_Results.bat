@@ -1,0 +1,1 @@
+..\bin\Windows\win10_x64\Sandbox_Scryer.exe -cmd col -i ..\test_output -ita ..\test_data\TopAttackTechniques__High__060922.json -o ..\test_output\collated_data -name collated_080122 -mitre_data ..\test_data\enterprise-attack__062322.json  -inc_sub

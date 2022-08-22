@@ -1,0 +1,41 @@
+Tactic, Techniques Used
+Reconnaissance
+Resource Development
+Initial Access
+Execution, T1059, T1059.003
+Persistence, T1547, T1547.001
+Privilege Escalation, T1055, T1055.012, T1134, T1134.001, T1547, T1547.001
+Defense Evasion, T1027, T1027.002, T1055, T1055.012, T1070, T1070.004, T1112, T1134, T1134.001, T1497, T1497.003
+Credential Access, T1056, T1056.004
+Discovery, T1010, T1012, T1057, T1082, T1120, T1497, T1497.003
+Lateral Movement, T1021, T1021.001
+Collection, T1056, T1056.004
+Command and Control
+Exfiltration
+Impact
+
+Technique,
+T1010,-- Summary:Scanning for window names
+T1012,-- Summary:Reads information about supported languages,-- Summary:Reads the active computer name,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\COMPUTERNAME\ACTIVECOMPUTERNAME,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\CUSTOMLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\EXTENDEDLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\LOCALE
+T1021
+T1021.001,-- Summary:Reads terminal service related keys (often RDP related),Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\TERMINAL SERVER
+T1027
+T1027.002,-- Summary:Matched Compiler/Packer signature
+T1055,-- Process Image:<Input Sample>.exe,-- Summary:Writes data to a remote process
+T1055.012,-- Summary:Allocates virtual memory in a remote process
+T1056
+T1056.004,-- Process Image:<Input Sample>.exe,-- Process Image:cmd.exe,-- Process Image:reg.exe,-- Summary:Installs hooks/patches the running process
+T1057,-- Summary:Queries process information
+T1059
+T1059.003,-- Summary:Runs shell commands
+T1070
+T1070.004,-- Summary:Marks file for deletion,-- Summary:Opens file with deletion access rights
+T1082,-- Summary:Contains ability to read software policies,Reg:HKLM\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SAFER\CODEIDENTIFIERS
+T1112,-- Summary:Creates or modifies windows services,-- Summary:Modifies the UAC/LUA settings (Account Control),-- Summary:Uses REG.EXE to add/load/import registry data,Reg:HKLM\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\SYSTEM,Reg:HKLM\SYSTEM\CONTROLSET001\SERVICES\TCPIP\PARAMETERS
+T1120,-- Summary:Queries volume information,-- Summary:Queries volume information of an entire harddrive
+T1134
+T1134.001,-- Summary:Imports system security related APIs,-- Summary:Observed system security related strings
+T1497
+T1497.003,-- Summary:Possibly tries to evade analysis by sleeping many times,-- Summary:Tries to sleep for a long time (more than two minutes)
+T1547
+T1547.001,-- Summary:Modifies auto-execute functionality by setting/creating a value in the registry,Reg:HKCU\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN,Reg:HKLM\SOFTWARE\WOW6432NODE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN

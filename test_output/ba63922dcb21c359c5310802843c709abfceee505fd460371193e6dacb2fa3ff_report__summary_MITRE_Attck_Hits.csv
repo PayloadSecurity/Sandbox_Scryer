@@ -1,0 +1,40 @@
+Tactic, Techniques Used
+Reconnaissance
+Resource Development
+Initial Access
+Execution, T1047
+Persistence, T1574, T1574.010
+Privilege Escalation, T1055, T1055.012, T1134, T1134.001, T1548, T1574, T1574.010
+Defense Evasion, T1027, T1027.002, T1055, T1055.012, T1134, T1134.001, T1497, T1548, T1574, T1574.010
+Credential Access, T1056, T1056.004
+Discovery, T1012, T1057, T1082, T1083, T1120, T1497, T1518, T1518.001
+Lateral Movement, T1021, T1021.001
+Collection, T1005, T1056, T1056.004
+Command and Control
+Exfiltration
+Impact
+
+Technique,
+T1005,-- Summary:Found browser information locations related strings
+T1012,-- Summary:Found registry key string for installed applications,-- Summary:Reads information about supported languages,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\CUSTOMLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\EXTENDEDLOCALE,Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\LOCALE
+T1021
+T1021.001,-- Summary:Reads terminal service related keys (often RDP related),Reg:HKLM\SYSTEM\CONTROLSET001\CONTROL\TERMINAL SERVER
+T1027
+T1027.002,-- Summary:PE file is packed with UPX
+T1047,-- Summary:Contains references to WMI/WMIC,-- Summary:Found a reference to a WMI query string known to be used for VM detection
+T1055,-- Process Image:<Input Sample>.exe,-- Summary:Observed CreateRemoteThread API string,-- Summary:Writes data to a remote process
+T1055.012,-- Summary:Allocates virtual memory in a remote process
+T1056
+T1056.004,-- Process Image:<Input Sample>.exe,-- Summary:Installs hooks/patches the running process
+T1057,-- Summary:Observed Process32First/Process32Next/CreateToolhelp32Snapshot API string
+T1082,-- Summary:Contains ability to read software policies,-- Summary:Observed GetEnvironmentVariable API string,-- Summary:Observed RtlGetVersion/RtlGetNtProductType API string,Reg:HKLM\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SAFER\CODEIDENTIFIERS
+T1083,-- Summary:Observed GetLogicalDriveStrings API string
+T1120,-- Summary:Queries volume information,-- Summary:Queries volume information of an entire harddrive
+T1134,-- Summary:Observed AdjustTokenPrivileges API string
+T1134.001,-- Summary:Observed system security related strings
+T1497,-- Summary:Possibly tries to implement anti-virtualization techniques
+T1518
+T1518.001,-- Summary:Possibly checks for the presence of a forensics/monitoring tool,-- Summary:Possibly checks for the presence of an Antivirus engine
+T1548,-- Summary:Observed strings related to Windows privileges
+T1574
+T1574.010,-- Summary:References security related windows services

@@ -1,0 +1,5 @@
+
+.vs/sandbox_scryer/*
+bin/Debug/*
+bin/Release/*
+obj/*
