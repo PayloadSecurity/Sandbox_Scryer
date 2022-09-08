@@ -1285,7 +1285,7 @@ namespace Sandbox_Scryer
 
 
             // Write error log output
-            output_FilePath = output_FolderPath + "\\" + name + "_Error_Log.txt";
+            output_FilePath = output_FolderPath + Path.DirectorySeparatorChar + name + "_Error_Log.txt";
             using (StreamWriter streamWriter = new StreamWriter(output_FilePath))
             {
                 foreach (string output_Line in Error_Log)
@@ -1298,7 +1298,7 @@ namespace Sandbox_Scryer
             if (sorted_Entries != null)
             {
                 // Write MITRE Att&ck frame hits as text output
-                output_FilePath = output_FolderPath + "\\" + name + "_MITRE_Attck_Hits.txt";
+                output_FilePath = output_FolderPath + Path.DirectorySeparatorChar + name + "_MITRE_Attck_Hits.txt";
 
                 sorted_Entries.Clear();
 
@@ -1457,7 +1457,7 @@ namespace Sandbox_Scryer
             bool first_Header;
 
 
-            output_FilePath = output_FolderPath + "\\" + name + "_MITRE_Attck_Hits.csv";
+            output_FilePath = output_FolderPath + Path.DirectorySeparatorChar + name + "_MITRE_Attck_Hits.csv";
 
             using (StreamWriter streamWriter = new StreamWriter(output_FilePath))
             {
@@ -1543,7 +1543,7 @@ namespace Sandbox_Scryer
             if (font != null)
             {
                 // Create and write image for hits against complete list of Att&ck techniques
-                output_FilePath = output_FolderPath + "\\" + name + "_Hits__Complete_List.png";
+                output_FilePath = output_FolderPath + Path.DirectorySeparatorChar + name + "_Hits__Complete_List.png";
 
                 using (var image = new Bitmap(attck_Matrix_Image__width, attck_Matrix_Image__height))
                 {
@@ -1790,7 +1790,7 @@ namespace Sandbox_Scryer
             string metadata_value;
 
 
-            output_FilePath = output_FolderPath + "\\" + name + "_MITRE_Attck_Heatmap.json";
+            output_FilePath = output_FolderPath + Path.DirectorySeparatorChar + name + "_MITRE_Attck_Heatmap.json";
 
             using (StreamWriter streamWriter = new StreamWriter(output_FilePath))
             {
